@@ -1,6 +1,10 @@
 import sys     
 from PyQt5.QtWidgets import QWidget,QApplication,QTableWidget,QTableWidgetItem,QVBoxLayout
-from Set_Value import *
+
+#Get Item
+def getitem():
+    for currentItem in table.selectedItems():
+        print('Row :',str(currentItem.row()),'Column :',str(currentItem.column()),currentItem.text())
 
 app = QApplication(sys.argv)
 
@@ -34,6 +38,7 @@ table.setItem(0,1,QTableWidgetItem("B"))
 table.setItem(1,0,QTableWidgetItem("C"))
 table.setItem(1,1,QTableWidgetItem("D"))
 
+table.doubleClicked.connect(getitem)
 layout.addWidget(table)
 wg.setLayout(layout)
 wg.show()
