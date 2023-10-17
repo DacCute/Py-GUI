@@ -1,7 +1,7 @@
 import sys     
 from PyQt5.QtWidgets import QWidget,QApplication,QTableWidget,QTableWidgetItem,QVBoxLayout
 
-#Get Item
+#Get Item when db click
 def getitem():
     for currentItem in table.selectedItems():
         print('Row :',str(currentItem.row()),'Column :',str(currentItem.column()),currentItem.text())
