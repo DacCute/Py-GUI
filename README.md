@@ -13,10 +13,10 @@ A GUI based application's top level window is created by **QMainWindow** widget 
 
 ![QMainWindow framework](./Illustration/qmainwindow.jpg "Window framework")
 
-
+[Test](./Making_window.py)
 
 ## Make py GUI table
 
 Make GUI as a table to communicate 
 
-[Test](./GUI_table.py)
+[Test](./Making_table.py)
