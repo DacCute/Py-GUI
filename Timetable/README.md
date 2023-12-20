@@ -3,5 +3,5 @@
 **Libarary**
 
 ```
-pip install tabulate
+pip install prettytable
 ```
